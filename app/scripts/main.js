@@ -39,25 +39,27 @@ $(document).ready(function(){
 
 		// process all File objects
 		for (var i = 0, f; f = files[i]; i++) {
-			
-			// if svg, then process it
-			if (file.type.indexOf("svg") > 0) {
-				var reader = new FileReader();
-				reader.onload = function(e) {
-					
-					// draw it:
-					draw_svg(atob(e.target.result.replace('data:image/svg+xml;base64,', '')), file);
+			(function(file){
+				// if svg, then process it
+				if (file.type.indexOf("svg") > 0) {
+					var reader = new FileReader();
+					console.log(f);
+					reader.onload = function(e) {
+						console.log(f);
+						// draw it:
+						draw_svg(atob(e.target.result.replace('data:image/svg+xml;base64,', '')), file);
 
+					}
+					reader.readAsDataURL(file);
 				}
-				reader.readAsDataURL(file);
-			}
+			})(f);
 		}
 
 	}
 
 	// draw svg
 	function draw_svg(svg_str, file){
-		
+		console.log(file);
 		fabric.loadSVGFromString(svg_str, function(objects, options){
 
 			// translate svg to fabric's objects
