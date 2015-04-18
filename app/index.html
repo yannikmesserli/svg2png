@@ -6,38 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SVG2PNG</title>
 
+    <meta name="description" content="Conversion of SVG files to PNGs, done in the browser." />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="SVG2PNG" />
+    <meta property="og:title" content="SVG2PNG" />
+    <meta property="og:description" content="Conversion of SVG files to PNGs, done in the browser." />
+    <meta property="og:url" content="http://myre.ch/svg2png" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SVG2PNG" />
+    <meta name="twitter:description" content="Conversion of SVG files to PNGs, done in the browser." />
+    <meta name="twitter:url" content="http://myre.ch/svg2png" />
+  
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./images/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
 
     <!-- build:css styles/main.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
 
     
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <!-- endbuild -->
 
   </head>
   <body>
     <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="./http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <div class="container">
@@ -48,7 +61,7 @@
         </p>
       </div>
 
-      <form id="upload" action="upload.php" method="POST" enctype="multipart/form-data" class="form-inline"/>
+      <form id="upload" action="upload.php" method="POST" enctype="multipart/form-data" class="form-inline">
         <fieldset>
           
             <div class="form-group">
@@ -80,9 +93,9 @@
 
       <div class="footer small">
         <div class="row">
-          <div class="col-sm-6">The conversion is done on your browser. No data are uploaded on our server, whatsoever. </div>
+          <div class="col-sm-6">The conversion is done in your browser. No data are uploaded on our server, whatsoever. </div>
           <div class="col-sm-6">
-            Done using the awesome <a href="http://fabricjs.com/">Fabric.js</a> library by <a href="http://myre.ch">Yannik Messerli</a>
+            Done by <a href="http://myre.ch">Yannik Messerli</a> using the awesome <a href="http://fabricjs.com/">Fabric.js</a> library. <a href="https://github.com/yannikmesserli/svg2png">Source code</a>
           </div>
         </div>
       </div>
@@ -95,17 +108,17 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      ga('create','UA-8775504-1');ga('send','pageview');
     </script>
 
     <!-- build:js scripts/main.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/bower_components/fabric/dist/fabric.min.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./bower_components/fabric/dist/fabric.min.js"></script>
     <!-- endbower -->
     
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
     <!-- endbuild -->
 </body>
 </html>
